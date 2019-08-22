@@ -21,9 +21,7 @@
   },
   "homepage": "https://github.com/kapouer/postinstall-browserify#readme",
   "dependencies": {
-    "browserify": "^16.2.2"
-  },
-  "peerDependencies": {
-    "postinstall": "^0.2.0"
+    "browserify": "^16.2.2",
+    "postinstall": "^0.5.0"
   }
 }
