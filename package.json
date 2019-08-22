@@ -1,6 +1,6 @@
 {
   "name": "postinstall-browserify",
-  "version": "0.1.1",
+  "version": "0.5.0",
   "description": "postinstall command to browserify javascript files",
   "main": "index.js",
   "scripts": {
