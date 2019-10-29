@@ -11,7 +11,9 @@ module.exports = function(input, data, output, opts) {
 	return new Promise(function(resolve, reject) {
 		browserify(ps, opts).bundle(function(err, buf) {
 			if (err) reject(err);
-			else resolve(buf);
+			else resolve({
+				data: buf
+			});
 		});
 	});
 };
