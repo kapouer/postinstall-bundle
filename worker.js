@@ -10,8 +10,12 @@ module.exports = function(input, data, output, opts) {
 	ps.end(data);
 	return new Promise(function(resolve, reject) {
 		browserify(ps, opts).bundle(function(err, buf) {
-			if (err) reject(err);
-			else resolve({
+			if (err) {
+				const simpleErr = new Error(err.message);
+				simpleErr.code = err.code;
+				simpleErr.stack = err.stack;
+				reject(simpleErr);
+			} else resolve({
 				data: buf
 			});
 		});
