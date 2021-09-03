@@ -1,9 +1,9 @@
-postinstall-browserify
-======================
+postinstall-bundle
+==================
 
 This is a [postinstall](http://github.com/kapouer/postintall) command plugin.
 
-It runs `browserify` on input and accepts options.
+It runs a bundler (currently rollup) on input.
 
 Usage
 -----
@@ -11,14 +11,14 @@ Usage
 The plugin can be called directly, or through `postinstall`.
 
 Directly:
-```
-require('postinstall-browserify')(inputs, output, options).then(function() {
-	// done
+
+```js
+require('postinstall-bundle')(inputs, output, options).then(function() {
+
 });
 ```
 
 Options
-=======
+-------
 
-All options (command-line or json style) are passed directly to browserify.
-
+- name: global name for exported symbols

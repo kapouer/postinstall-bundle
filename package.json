@@ -1,14 +1,14 @@
 {
-  "name": "postinstall-browserify",
-  "version": "0.7.1",
-  "description": "postinstall command to browserify javascript files",
+  "name": "postinstall-bundle",
+  "version": "0.7.0",
+  "description": "postinstall command to bundle javascript files",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kapouer/postinstall-browserify.git"
+    "url": "git+https://github.com/kapouer/postinstall-bundle.git"
   },
   "keywords": [
     "postinstall",
@@ -17,12 +17,13 @@
   "author": "Jérémy Lal <kapouer@melix.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kapouer/postinstall-browserify/issues"
+    "url": "https://github.com/kapouer/postinstall-bundle/issues"
   },
-  "homepage": "https://github.com/kapouer/postinstall-browserify#readme",
+  "homepage": "https://github.com/kapouer/postinstall-bundle#readme",
   "dependencies": {
-    "browserify": "^17.0.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
     "postinstall": "^0.7.0",
-    "postinstall-cache": "^0.7.0"
+    "rollup": "^2.56.3"
   }
 }
