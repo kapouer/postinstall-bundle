@@ -1,6 +1,7 @@
 const rollup = require('rollup');
 const rollupResolve = require('@rollup/plugin-node-resolve');
 const rollupCommonjs = require('@rollup/plugin-commonjs');
+const rollupJson = require('@rollup/plugin-json');
 
 module.exports = function (input, output, opts) {
 	return rollup.rollup({
@@ -8,7 +9,8 @@ module.exports = function (input, output, opts) {
 		context: 'window',
 		plugins: [
 			rollupResolve.nodeResolve({ browser: true }),
-			rollupCommonjs()
+			rollupCommonjs(),
+			rollupJson()
 		]
 	}).then(function (bundle) {
 		return bundle.write({
