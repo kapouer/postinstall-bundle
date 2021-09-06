@@ -3,7 +3,7 @@ postinstall-bundle
 
 This is a [postinstall](http://github.com/kapouer/postintall) command plugin.
 
-It runs a bundler (currently rollup) on input.
+It runs a bundler (currently rollup) on input, and outputs in iife format.
 
 Usage
 -----
