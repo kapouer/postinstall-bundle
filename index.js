@@ -8,8 +8,8 @@ module.exports = function (input, output, opts) {
 		input: input,
 		context: 'window',
 		plugins: [
-			rollupResolve.nodeResolve({ browser: true }),
 			rollupCommonjs(),
+			rollupResolve.nodeResolve({ browser: true }),
 			rollupJson()
 		]
 	}).then(function (bundle) {
