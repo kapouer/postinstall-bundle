@@ -23,3 +23,4 @@ Options
 
 - name: global name for exported symbols
 - format: amd, cjs, es, iife, umd, system, ... defaults to iife
+- replace: STRING:VALUE (option can be passed multiple times)
