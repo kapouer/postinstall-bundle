@@ -27,5 +27,11 @@
     "@rollup/plugin-replace": "^3.0.0",
     "postinstall": "^0.7.0",
     "rollup": "^2.56.3"
+  },
+  "devDependencies": {
+    "@kapouer/eslint-config": "^1.5.1"
+  },
+  "eslintConfig": {
+    "extends": "@kapouer/eslint-config"
   }
 }
