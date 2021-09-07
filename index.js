@@ -14,7 +14,7 @@ module.exports = function (input, output, opts) {
 		]
 	}).then(function (bundle) {
 		return bundle.write({
-			format: 'iife',
+			format: opts.format || 'iife',
 			file: output,
 			name: opts.name
 		}).then(function () {
