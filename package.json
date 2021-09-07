@@ -1,6 +1,6 @@
 {
   "name": "postinstall-bundle",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "postinstall command to bundle javascript files",
   "main": "index.js",
   "scripts": {
