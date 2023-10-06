@@ -4,8 +4,8 @@ const cjs = require('@rollup/plugin-commonjs');
 const json = require('@rollup/plugin-json');
 const replace = require('@rollup/plugin-replace');
 
-module.exports = function (input, output, opts) {
-	return rollup.rollup({
+module.exports = async function (input, output, opts) {
+	const bundle = await rollup.rollup({
 		input: input,
 		context: 'window',
 		plugins: [
@@ -14,17 +14,14 @@ module.exports = function (input, output, opts) {
 			nodeResolve({ browser: true }),
 			json()
 		]
-	}).then(function (bundle) {
-		return bundle.write({
-			format: opts.format || 'iife',
-			file: output,
-			name: opts.name
-		}).then(function () {
-			return bundle.close();
-		});
 	});
+	await bundle.write({
+		format: opts.format || 'iife',
+		file: output,
+		name: opts.name
+	});
+	await bundle.close();
 };
-
 
 function getReplaces(opt) {
 	const obj = {};
