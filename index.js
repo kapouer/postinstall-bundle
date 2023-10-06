@@ -15,10 +15,12 @@ module.exports = async function (input, output, opts) {
 			json()
 		]
 	});
+	if (opts.extend === "false") opts.extend = false;
 	await bundle.write({
 		format: opts.format || 'iife',
 		file: output,
-		name: opts.name
+		name: opts.name,
+		extend: Boolean(opts.extend)
 	});
 	await bundle.close();
 };
