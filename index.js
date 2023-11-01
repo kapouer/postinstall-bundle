@@ -11,7 +11,10 @@ module.exports = async function (input, output, opts) {
 		plugins: [
 			replace({ preventAssignment: true, values: getReplaces(opts.replace) }),
 			cjs(),
-			nodeResolve({ browser: true }),
+			nodeResolve({
+				browser: true,
+				preferBuiltins: false
+			}),
 			json()
 		]
 	});
