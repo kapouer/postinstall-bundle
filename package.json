@@ -21,15 +21,15 @@
   },
   "homepage": "https://github.com/kapouer/postinstall-bundle#readme",
   "dependencies": {
-    "@rollup/plugin-commonjs": "^25.0.5",
+    "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-json": "^6.0.1",
-    "@rollup/plugin-node-resolve": "^15.2.2",
-    "@rollup/plugin-replace": "^5.0.3",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
     "postinstall": "^0.8.0",
-    "rollup": "^3.29.4"
+    "rollup": "^4.3.0"
   },
   "devDependencies": {
-    "@kapouer/eslint-config": "^1.9.1"
+    "@kapouer/eslint-config": "^2.0.0"
   },
   "eslintConfig": {
     "extends": "@kapouer/eslint-config"
