@@ -1,6 +1,6 @@
 {
   "name": "postinstall-bundle",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "postinstall command to bundle javascript files",
   "main": "index.js",
   "scripts": {
@@ -22,11 +22,11 @@
   "homepage": "https://github.com/kapouer/postinstall-bundle#readme",
   "dependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-replace": "^5.0.5",
-    "postinstall": "^0.8.0",
-    "rollup": "^4.3.0"
+    "postinstall": "^0.9.0",
+    "rollup": "^4.10.0"
   },
   "devDependencies": {
     "@kapouer/eslint-config": "^2.0.0"
